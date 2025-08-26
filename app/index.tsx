@@ -46,7 +46,7 @@ export default function Home() {
           <ModuleCard 
             moduleName="Appointment and Orders" 
             imageSource={require("@/assets/images/appointment-and-orders.png")} 
-            modulePath="/appointment-orders"
+            modulePath="/appointment-and-orders"
           />
           <ModuleCard 
             moduleName="Ask the Expert" 

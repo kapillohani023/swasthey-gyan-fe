@@ -20,5 +20,13 @@ export default function RootLayout() {
     return null;
   }
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="index" />
+      <Stack.Screen name="hospital-search" />
+      <Stack.Screen name="surgery-timeline" />
+      <Stack.Screen name="appointment-orders" />
+      <Stack.Screen name="ask-expert" />
+    </Stack>
+  );
 }

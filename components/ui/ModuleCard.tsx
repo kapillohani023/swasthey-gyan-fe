@@ -18,7 +18,7 @@ export function ModuleCard({ moduleName, imageSource, modulePath }: ModuleCardPr
         <TouchableOpacity
             onPress={handlePress}
             style={{
-                width: '90%',
+                width: '100%',
                 backgroundColor: "#EDECF4",
                 borderRadius: 10,
                 flexDirection: "row",
