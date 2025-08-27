@@ -1,26 +1,27 @@
+import { SG_COLORS } from '@/constants/theme';
 import React, { useMemo, useState } from 'react';
 import { Animated, ScrollView, StyleSheet, TouchableOpacity, View } from 'react-native';
-import { Typography } from './Typography';
+import { SGTypography } from './SGTypography';
 
-export interface AccordionItem {
+export interface SGAccordionItem {
   title: string;
   content: string | React.ReactNode;
-  items?: AccordionItem[];
+  items?: SGAccordionItem[];
 }
 
-interface CustomAccordionProps {
-  items: AccordionItem[];
+interface SGAccordionProps {
+  items: SGAccordionItem[];
   allowMultiple?: boolean;
 }
 
-const CustomAccordion: React.FC<CustomAccordionProps> = ({ 
+const SGAccordion: React.FC<SGAccordionProps> = ({ 
   items, 
   allowMultiple = true 
 }) => {
   const [expandedItems, setExpandedItems] = useState<string[]>([]);
   
   // Generate all possible keys for the accordion structure
-  const generateKeys = (items: AccordionItem[], parentKey: string = ''): string[] => {
+  const generateKeys = (items: SGAccordionItem[], parentKey: string = ''): string[] => {
     let keys: string[] = [];
     items.forEach((item, index) => {
       const currentKey = parentKey ? `${parentKey}_${index}` : index.toString();
@@ -62,7 +63,7 @@ const CustomAccordion: React.FC<CustomAccordionProps> = ({
     }
   };
 
-  const renderItem = (item: AccordionItem, index: number, parentKey: string = ''): React.ReactNode => {
+  const renderItem = (item: SGAccordionItem, index: number, parentKey: string = ''): React.ReactNode => {
     const currentKey = parentKey ? `${parentKey}_${index}` : index.toString();
     const isExpanded = expandedItems.includes(currentKey);
     const animation = animations.get(currentKey);
@@ -88,13 +89,13 @@ const CustomAccordion: React.FC<CustomAccordionProps> = ({
           onPress={() => toggleItem(currentKey)}
           activeOpacity={0.7}
         >
-          <Typography variant="h6" style={styles.title}>
+          <SGTypography variant="h6" style={styles.title}>
             {item.title}
-          </Typography>
+          </SGTypography>
           <Animated.View style={[styles.arrow, { transform: [{ rotate: rotateAnimation }] }]}>
-            <Typography variant="caption" style={styles.arrowText}>
+            <SGTypography variant="caption" style={styles.arrowText}>
               ▼
-            </Typography>
+            </SGTypography>
           </Animated.View>
         </TouchableOpacity>
         
@@ -109,9 +110,9 @@ const CustomAccordion: React.FC<CustomAccordionProps> = ({
         >
           <View style={styles.contentInner}>
             {typeof item.content === 'string' ? (
-              <Typography variant="body" style={styles.contentText}>
+              <SGTypography variant="body" style={styles.contentText}>
                 {item.content}
-              </Typography>
+              </SGTypography>
             ) : (
               item.content
             )}
@@ -155,8 +156,8 @@ const styles = StyleSheet.create({
   accordionItem: {
     marginBottom: 8,
     borderRadius: 12,
-    backgroundColor: '#FFFFFF',
-    shadowColor: '#000',
+    backgroundColor: SG_COLORS.white,
+    shadowColor: SG_COLORS.black,
     shadowOffset: {
       width: 0,
       height: 2,
@@ -172,13 +173,13 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingVertical: 16,
     paddingHorizontal: 20,
-    backgroundColor: '#F8F9FF',
+    backgroundColor: SG_COLORS.backgroundLight,
     borderBottomWidth: 1,
-    borderBottomColor: '#E8E9F0',
+    borderBottomColor: SG_COLORS.border,
   },
   title: {
     flex: 1,
-    color: '#432C81',
+    color: SG_COLORS.primary,
   },
   arrow: {
     width: 24,
@@ -188,7 +189,7 @@ const styles = StyleSheet.create({
   },
   arrowText: {
     fontSize: 12,
-    color: '#432C81',
+    color: SG_COLORS.primary,
   },
   content: {
     overflow: 'hidden',
@@ -198,9 +199,9 @@ const styles = StyleSheet.create({
     gap: 5,
   },
   contentText: {
-    color: '#666666',
+    color: SG_COLORS.text,
     lineHeight: 24,
   },
 });
 
-export default CustomAccordion;
+export default SGAccordion;

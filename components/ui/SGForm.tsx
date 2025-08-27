@@ -1,9 +1,10 @@
+import { SG_COLORS } from "@/constants/theme";
 import React, { useState } from "react";
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
-import CustomButton from "./CustomButton";
-import { Typography } from "./Typography";
+import SGButton from "./SGButton";
+import { SGTypography } from "./SGTypography";
 
-export interface Field {
+export interface SGField {
     label: string;
     type: string;
     key: string;
@@ -12,13 +13,13 @@ export interface Field {
     extras?: any;
 }
 
-interface CustomFormProps {
+interface SGFormProps {
     title: string;
-    fields: Field[];
+    fields: SGField[];
     onSubmit?: (formData: any) => void;
 }
 
-export function CustomForm({ title, fields, onSubmit }: CustomFormProps) {
+export function SGForm({ title, fields, onSubmit }: SGFormProps) {
     const [formData, setFormData] = useState<Record<string, any>>({});
     const [selectedIndex, setSelectedIndex] = useState<Record<string, number>>({});
     const [showSelect, setShowSelect] = useState<Record<string, boolean>>({});
@@ -55,7 +56,7 @@ export function CustomForm({ title, fields, onSubmit }: CustomFormProps) {
         }
     };
 
-    const renderField = (field: Field) => {
+    const renderField = (field: SGField) => {
         switch (field.type) {
             case "text":
                 return (
@@ -137,12 +138,12 @@ export function CustomForm({ title, fields, onSubmit }: CustomFormProps) {
 
     return (
         <View style={styles.container}>
-            <Typography variant="h3">{title}</Typography>
+            <SGTypography variant="h3">{title}</SGTypography>
             <View style={styles.fieldsContainer}>
                 {fields.map((field) => (
                     <View key={field.key} style={styles.fieldRow}>
                         <View style={styles.labelContainer}>
-                            <Typography variant="body">{field.label}</Typography>
+                            <SGTypography variant="body">{field.label}</SGTypography>
                         </View>
                         <View style={styles.inputContainer}>
                             {renderField(field)}
@@ -150,7 +151,7 @@ export function CustomForm({ title, fields, onSubmit }: CustomFormProps) {
                     </View>
                 ))}
             </View>
-            <CustomButton text="Submit" onPress={handleSubmit} />
+            <SGButton text="Submit" onPress={handleSubmit} />
         </View>
     )
 }
@@ -160,7 +161,7 @@ const styles = StyleSheet.create({
         flex: 1,
         gap: 20,
         padding: 20,
-        paddingBottom: 100, // Add bottom padding to avoid menu overlap
+        paddingBottom: 100,
         justifyContent: "space-around",
         width: "100%"
     },
@@ -185,7 +186,7 @@ const styles = StyleSheet.create({
     },
     input: {
         borderWidth: 1,
-        borderColor: "gray",
+        borderColor: SG_COLORS.border,
         borderRadius: 5,
         padding: 10,
         width: "100%"
@@ -197,7 +198,7 @@ const styles = StyleSheet.create({
     },
     selectButton: {
         borderWidth: 1,
-        borderColor: "gray",
+        borderColor: SG_COLORS.border,
         borderRadius: 5,
         padding: 10,
         backgroundColor: "white"

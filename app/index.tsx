@@ -1,7 +1,8 @@
-import { ModuleCard } from '@/components/ui/ModuleCard';
-import { UserButton } from '@/components/ui/userButton';
+import { ModuleCard } from '@/components/core/ModuleCard';
+import { UserButton } from '@/components/core/userButton';
+import { SG_ROUTES } from '@/constants/route';
 import { ScrollView, View } from 'react-native';
-import { Typography } from '../components/ui/Typography';
+import { SGTypography } from '../components/ui/SGTypography';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         width: '100%',
         marginBottom: 20,
       }}>
-        <Typography variant="h1">👋 Hi User!</Typography>
+        <SGTypography variant="h1">👋 Hi User!</SGTypography>
         <UserButton />
       </View>
 
@@ -32,22 +33,22 @@ export default function Home() {
           <ModuleCard 
             moduleName="Hospital Search" 
             imageSource={require("@/assets/images/hospital-search.png")} 
-            modulePath="/hospital-search"
+            modulePath={SG_ROUTES.HOSPITAL_SEARCH}
           />
           <ModuleCard 
             moduleName="Surgery Timeline" 
             imageSource={require("@/assets/images/surgery-timeline.png")} 
-            modulePath="/surgery-timeline"
+            modulePath={SG_ROUTES.SURGERY_TIMELINE}
           />
           <ModuleCard 
             moduleName="Appointment and Orders" 
             imageSource={require("@/assets/images/appointment-and-orders.png")} 
-            modulePath="/appointment-and-orders"
+            modulePath={SG_ROUTES.APPOINTMENTS_AND_ORDERS}
           />
           <ModuleCard 
             moduleName="Ask the Expert" 
             imageSource={require("@/assets/images/ask-the-expert.png")} 
-            modulePath="/ask-expert"
+            modulePath={SG_ROUTES.ASK_THE_EXPERT}
           />
         </View>
       </ScrollView>

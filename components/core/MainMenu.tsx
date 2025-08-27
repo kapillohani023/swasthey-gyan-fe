@@ -1,6 +1,7 @@
+import { SG_COLORS } from '@/constants/theme';
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
-import { Platform, StyleSheet, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 interface MenuProps {
@@ -39,7 +40,7 @@ const Menu: React.FC<MenuProps> = ({ activeTab = 'home', onTabPress }) => {
               <Ionicons
                 name={iconName as any}
                 size={24}
-                color={isActive ? '#432C81' : '#8E8E93'}
+                color={isActive ? SG_COLORS.active : SG_COLORS.inactive}
               />
             </TouchableOpacity>
           );
@@ -55,20 +56,9 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: SG_COLORS.backgroundLight,
     borderTopWidth: 1,
-    borderTopColor: '#E5E5EA',
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: -2 },
-        shadowOpacity: 0.1,
-        shadowRadius: 4,
-      },
-      android: {
-        elevation: 8,
-      },
-    }),
+    borderTopColor: SG_COLORS.border,
   },
   menuBar: {
     flexDirection: 'row',

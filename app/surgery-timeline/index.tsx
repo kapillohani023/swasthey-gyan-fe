@@ -1,12 +1,12 @@
-import BackButtonHeader from '@/components/ui/BackButtonHeader';
-import { CustomForm, Field } from '@/components/ui/CustomForm';
-import { ModuleCard } from '@/components/ui/ModuleCard';
+import BackButtonHeader from '@/components/core/BackButtonHeader';
+import { ModuleCard } from '@/components/core/ModuleCard';
+import { SGField, SGForm } from '@/components/ui/SGForm';
 import { router } from 'expo-router';
 import { View } from 'react-native';
 
 export default function SurgeryTimeline() {
 
-  const formFields: Field[] = [
+  const formFields: SGField[] = [
     {
       label: "Date of Admission",
       type: "date",
@@ -36,7 +36,7 @@ export default function SurgeryTimeline() {
     <View style={{ flex: 1, padding: 20, backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
       <BackButtonHeader backPath="/" />
       <ModuleCard moduleName="Surgery Timeline" imageSource={require("@/assets/images/surgery-timeline.png")} modulePath="surgery-timeline" />
-      <CustomForm title="Surgery Details" fields={formFields} onSubmit={handleSubmit} />
+      <SGForm title="Surgery Details" fields={formFields} onSubmit={handleSubmit} />
     </View>
   );
 }
