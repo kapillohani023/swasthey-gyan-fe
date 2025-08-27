@@ -160,6 +160,7 @@ const styles = StyleSheet.create({
         flex: 1,
         gap: 20,
         padding: 20,
+        paddingBottom: 100, // Add bottom padding to avoid menu overlap
         justifyContent: "space-around",
         width: "100%"
     },

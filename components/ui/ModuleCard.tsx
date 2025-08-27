@@ -33,7 +33,7 @@ export function ModuleCard({ moduleName, imageSource, modulePath, subtitle, disa
             }}
             activeOpacity={0.7}
         >   
-            <View>
+            <View style={{ flex: 1 }}>
                 <Typography variant="h3">{moduleName}</Typography>
                 {subtitle && <Typography variant="subtitle">{subtitle}</Typography>}
             </View>
@@ -42,7 +42,7 @@ export function ModuleCard({ moduleName, imageSource, modulePath, subtitle, disa
                 style={{ 
                     width: 80, 
                     height: 80,
-                    resizeMode: 'contain'
+                    resizeMode: 'contain',
                 }} 
             />
         </TouchableOpacity>
