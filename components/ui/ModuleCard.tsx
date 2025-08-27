@@ -7,11 +7,15 @@ interface ModuleCardProps {
     subtitle?: string;
     imageSource: ImageSourcePropType;
     modulePath: string;
+    disabled?: boolean;
 }
 
-export function ModuleCard({ moduleName, imageSource, modulePath, subtitle }: ModuleCardProps) {
+export function ModuleCard({ moduleName, imageSource, modulePath, subtitle, disabled }: ModuleCardProps) {
     const handlePress = () => {
         // @ts-ignore - modulePath is dynamic and router.push accepts string
+        if (disabled) {
+            return;
+        }
         router.push(modulePath as any);
     };
 

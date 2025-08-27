@@ -17,6 +17,6 @@ export default function SurgeryTimelineDetail() {
           ←
         </Typography>
       </View>
-      <ModuleCard moduleName="Surgery Timeline" imageSource={require("@/assets/images/surgery-timeline.png")} modulePath="surgery-timeline" subtitle={slug} />    </View>
+      <ModuleCard moduleName="Surgery Timeline" imageSource={require("@/assets/images/surgery-timeline.png")} modulePath="surgery-timeline" subtitle={slug} disabled={true} />    </View>
   );
 }
