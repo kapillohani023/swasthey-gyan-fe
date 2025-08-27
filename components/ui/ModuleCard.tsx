@@ -1,14 +1,15 @@
 import { router } from "expo-router";
-import { Image, ImageSourcePropType, TouchableOpacity } from "react-native";
+import { Image, ImageSourcePropType, TouchableOpacity, View } from "react-native";
 import { Typography } from "./Typography";
 
 interface ModuleCardProps {
     moduleName: string;
+    subtitle?: string;
     imageSource: ImageSourcePropType;
     modulePath: string;
 }
 
-export function ModuleCard({ moduleName, imageSource, modulePath }: ModuleCardProps) {
+export function ModuleCard({ moduleName, imageSource, modulePath, subtitle }: ModuleCardProps) {
     const handlePress = () => {
         // @ts-ignore - modulePath is dynamic and router.push accepts string
         router.push(modulePath as any);
@@ -27,8 +28,11 @@ export function ModuleCard({ moduleName, imageSource, modulePath }: ModuleCardPr
                 padding: 15,
             }}
             activeOpacity={0.7}
-        >
-            <Typography variant="h3">{moduleName}</Typography>
+        >   
+            <View>
+                <Typography variant="h3">{moduleName}</Typography>
+                {subtitle && <Typography variant="subtitle">{subtitle}</Typography>}
+            </View>
             <Image 
                 source={imageSource} 
                 style={{ 

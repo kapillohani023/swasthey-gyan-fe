@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Text, TextProps } from 'react-native';
 
 interface TypographyProps extends TextProps {
-  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'body' | 'caption';
+  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'body' | 'caption' | 'subtitle';
   children: React.ReactNode;
 }
 
@@ -73,6 +73,14 @@ export function Typography({ variant = 'body', style, children, ...props }: Typo
           ...baseStyle,
           fontSize: 14,
           lineHeight: 20,
+        };
+      case 'subtitle':
+        return {
+          ...baseStyle,
+          color: '#812C79',
+          fontSize: 18,
+          lineHeight: 24,
+          fontWeight: '500',
         };
       default:
         return baseStyle;
