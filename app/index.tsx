@@ -1,32 +1,28 @@
 import { ModuleCard } from '@/components/ui/ModuleCard';
 import { UserButton } from '@/components/ui/userButton';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { Typography } from '../components/ui/Typography';
 
 export default function Home() {
   return (
-    <View style={{ flex: 1, padding: 20, backgroundColor: 'white' }}>
-      <View
-        style={{
-          width: '100%',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          gap: 20,
-        }}
-      >
-        {/* Header */}
-        <View style={{ 
-          flexDirection: 'row', 
-          justifyContent: 'space-between', 
-          alignItems: 'center',
-          width: '100%',
-        }}>
-          <Typography variant="h1">👋 Hi User!</Typography>
-          <UserButton />
-        </View>
+    <View style={{ flex: 1, backgroundColor: 'white', padding: 20 }}>
+      {/* Header - Fixed at top */}
+      <View style={{ 
+        flexDirection: 'row', 
+        justifyContent: 'space-between', 
+        alignItems: 'center',
+        width: '100%',
+        marginBottom: 20,
+      }}>
+        <Typography variant="h1">👋 Hi User!</Typography>
+        <UserButton />
+      </View>
 
-        {/* Modules */}
+      {/* Modules - Scrollable */}
+      <ScrollView 
+        style={{ flex: 1 }}
+        showsVerticalScrollIndicator={false}
+      >
         <View style={{
           width: '100%',
           gap: 20,
@@ -54,8 +50,7 @@ export default function Home() {
             modulePath="/ask-expert"
           />
         </View>
-      </View>
-
+      </ScrollView>
     </View>
   );
 }

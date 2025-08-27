@@ -192,7 +192,8 @@ const styles = StyleSheet.create({
     },
     selectContainer: {
         width: "100%",
-        position: "relative"
+        position: "relative",
+        zIndex: 1000
     },
     selectButton: {
         borderWidth: 1,
