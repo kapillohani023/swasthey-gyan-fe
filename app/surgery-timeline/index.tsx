@@ -1,8 +1,8 @@
 import { CustomForm, Field } from '@/components/ui/CustomForm';
 import { ModuleCard } from '@/components/ui/ModuleCard';
+import { Typography } from '@/components/ui/Typography';
 import { router } from 'expo-router';
 import { View } from 'react-native';
-import { Typography } from '../components/ui/Typography';
 
 export default function SurgeryTimeline() {
 
