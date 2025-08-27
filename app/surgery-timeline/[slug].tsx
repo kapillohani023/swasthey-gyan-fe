@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import { Typography } from '../../components/ui/Typography';
 
 export default function SurgeryTimelineDetail() {
-  const { slug } = useLocalSearchParams<{ slug: string }>();
+  const { slug, date } = useLocalSearchParams<{ slug: string, date: string }>();
 
   return (
     <View style={{ flex: 1, padding: 20, backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
@@ -17,6 +17,7 @@ export default function SurgeryTimelineDetail() {
           ←
         </Typography>
       </View>
-      <ModuleCard moduleName="Surgery Timeline" imageSource={require("@/assets/images/surgery-timeline.png")} modulePath="surgery-timeline" subtitle={slug} disabled={true} />    </View>
+      <ModuleCard moduleName="Surgery Timeline" imageSource={require("@/assets/images/surgery-timeline.png")} modulePath="surgery-timeline" subtitle={slug} disabled={true} />
+    </View>
   );
 }

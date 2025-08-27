@@ -28,6 +28,7 @@ export default function SurgeryTimeline() {
       pathname: "/surgery-timeline/[slug]",
       params: {
         slug: data["surgery-type"],
+        date: data["date-of-admission"],
       },
     })
   }
