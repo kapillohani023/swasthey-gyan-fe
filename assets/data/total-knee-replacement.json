@@ -1,0 +1,330 @@
+{
+    "title": "Total Knee Replacement",
+    "description": "Total Knee Replacement is a surgery that replaces the entire knee joint with a prosthetic implant. It is used to treat severe knee arthritis.",
+    "timeline": [
+        {
+            "title": "Day 1 – Admission Day",
+            "content": "Today you will be admitted to the hospital. The medical team will prepare you for the upcoming surgery.",
+            "steps": [
+                {
+                    "title": "Nurse will perform basic vital checks",
+                    "content": "A nurse will check your blood pressure, pulse, oxygen, and temperature.",
+                    "terms": [
+                        {
+                            "title": "Blood Pressure (BP)",
+                            "content": "This tells how much pressure your blood is putting on the walls of your arteries. Why: It helps check if your blood pressure is too high or too low. High BP can increase the risk of bleeding during surgery. Low BP may indicate poor circulation or dehydration."
+                        },
+                        {
+                            "title": "Pulse (Heart Rate)",
+                            "content": "Measures how fast your heart is beating. Why: An abnormal heart rate may indicate stress, pain, or heart problems that need to be managed before surgery."
+                        },
+                        {
+                            "title": "Oxygen Saturation (SpO2)",
+                            "content": "This shows how much oxygen is in your blood. Why: Low oxygen levels can be dangerous during surgery. This tells doctors if your lungs are working well."
+                        },
+                        {
+                            "title": "Temperature",
+                            "content": "Checks if you have a fever or infection. Why: Any infection (even mild fever) can delay surgery or increase the risk of complications."
+                        }
+                    ]
+                },
+                {
+                    "title": "Doctor will assess your medical history",
+                    "content": "A doctor will review your medical history and current medications.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "This helps plan a safe surgery. For example, if you have diabetes or heart disease, your treatment plan will be adjusted to avoid risks."
+                        }
+                    ]
+                },
+                {
+                    "title": "Tests will be done",
+                    "content": "You will undergo necessary tests:",
+                    "terms": [
+                        {
+                            "title": "Blood tests",
+                            "content": "CBC (Complete Blood Count): Checks for anemia (low hemoglobin), infection (high white cells), or bleeding risk (platelet count). Kidney & Liver Function Tests (KFT/LFT): Confirms if your kidneys and liver can handle anesthesia and medications. Blood Sugar (Fasting/Random/HbA1c): Important for diabetics; uncontrolled sugar can delay healing and increase infection risk."
+                        },
+                        {
+                            "title": "ECG and Chest X-ray",
+                            "content": "ECG (Electrocardiogram): Checks heart rhythm and any silent heart conditions. Needed before anesthesia. Chest X-ray: Shows lung health. If you have asthma, smoking history, or other breathing issues, this helps plan safely."
+                        },
+                        {
+                            "title": "Urine test",
+                            "content": "Detects urinary tract infection (UTI) or sugar in urine. Infections must be treated before surgery."
+                        },
+                        {
+                            "title": "COVID or infection screening",
+                            "content": "COVID Test (if required): Ensures safety of both you and the surgical team."
+                        }
+                    ]
+                },
+                {
+                    "title": "Explanation by Doctor and Signing of Consent Forms",
+                    "content": "The doctor or a senior member of the surgical team will sit with you to explain the details of your Total Knee Replacement (TKR) surgery and the anesthesia plan.",
+                    "terms": [
+                        {
+                            "title": "What exactly will happen during surgery",
+                            "content": "The surgeon will remove the damaged parts of your knee joint and replace them with a metal or plastic implant. You'll be told what type of implant will be used, how long it lasts, and how it will improve your mobility and pain."
+                        },
+                        {
+                            "title": "How long the surgery takes and what to expect afterwards",
+                            "content": "Most TKR surgeries take 1.5 to 2.5 hours. You'll be in the recovery room for some time after surgery, and then shifted back to your ward."
+                        },
+                        {
+                            "title": "Anesthesia plan",
+                            "content": "The anesthesia team will decide whether you'll get spinal anesthesia (you'll be awake but won't feel pain from the waist down) or general anesthesia (you'll be fully asleep). The doctor will explain which option is safer for you based on your medical history."
+                        },
+                        {
+                            "title": "Possible risks and benefits",
+                            "content": "While TKR is generally safe, every surgery has some risks — like infection, bleeding, or reaction to anesthesia. These will be explained clearly, and you'll be given a chance to ask questions."
+                        },
+                        {
+                            "title": "Consent Forms",
+                            "content": "Once everything is explained and you're comfortable, you'll be asked to sign some consent forms. These are legal and safety documents showing that you understand and agree to the procedure."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "DAY 2 – Final Pre-Surgery Checks and Anesthesia Planning",
+            "content": "Today is all about confirming that you're fit for surgery tomorrow. Your test reports will be reviewed, your anesthesia plan will be finalized, and your body will be prepared for the operation. It's a day for final clearances, safety checks, and instructions.",
+            "steps": [
+                {
+                    "title": "Review of Reports and Surgical Clearance",
+                    "content": "Your doctor and anesthetist will review the reports from all the tests done on Day 1.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "The team must confirm that your heart, lungs, kidney, liver, blood sugar, and blood count are within safe limits. If any abnormality is found (e.g., low hemoglobin, high sugar, or infection), the team will take action before proceeding. Only after this medical clearance will the surgery be allowed to go ahead."
+                        }
+                    ]
+                },
+                {
+                    "title": "Meeting the Anesthesia Team",
+                    "content": "You will meet the anesthetist (the doctor who will give you anesthesia during surgery). They will review your medical and surgical history, discuss any allergies, past reactions to anesthesia, breathing issues, or current medications, and check your test reports again.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "The anesthetist decides what kind of anesthesia is safest for you: 1. Spinal anesthesia: You will be awake but won't feel anything below the waist. 2. General anesthesia: You will be fully unconscious during surgery. The anesthetist will explain how the anesthesia will be given, what you will feel (or not feel), and what to expect when you wake up."
+                        }
+                    ]
+                },
+                {
+                    "title": "Explanation of Fasting Instructions",
+                    "content": "You will be instructed to not eat or drink anything after midnight (this is called 'NPO' — nil per oral).",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "If your stomach is not empty during anesthesia, there is a risk that food or liquid could enter your lungs, which is dangerous. Fasting keeps you safe during surgery."
+                        }
+                    ]
+                },
+                {
+                    "title": "Physical Preparation for Surgery",
+                    "content": "The area around your knee (including part of your thigh and lower leg) may be shaved and cleaned. You may be given antibiotics or bowel prep depending on hospital protocol. The nurse might place a wristband or ID tag to confirm your name and surgery details.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "Cleaning the skin reduces the chance of infection during surgery. Marking and identifying the surgical site avoids any confusion."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "DAY 3 – Surgery Day",
+            "content": "Today is your Total Knee Replacement surgery. The goal is to replace your damaged knee joint with a new artificial one to help you walk better and live pain-free. The team will follow strict medical safety steps before, during, and after the surgery.",
+            "steps": [
+                {
+                    "title": "Morning Preparation",
+                    "content": "A nurse will come early to check your vital signs (blood pressure, pulse, temperature, oxygen). You may be asked to wear a surgical gown. Your surgical site will be cleaned again with antiseptic solution. An identification tag will be verified on your wrist to confirm your name, date of birth, and surgery.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "Final checks ensure you're stable before entering the operating room. Cleaning helps prevent infection. Wristband verification ensures correct patient and correct surgery."
+                        }
+                    ]
+                },
+                {
+                    "title": "Going to the Operating Theatre (OT)",
+                    "content": "You'll be taken on a stretcher or wheelchair to the pre-operative waiting area. The anesthesia team will meet you there and start an IV line in your hand or arm. You'll then be taken into the OT, where monitors will be attached to check your heart rate, BP, and oxygen throughout the surgery.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "An IV line is required to give you fluids, medicines, and anesthesia. Continuous monitoring is essential for safety during the operation."
+                        }
+                    ]
+                },
+                {
+                    "title": "Administration of Anesthesia",
+                    "content": "The anesthetist will give you spinal or general anesthesia, as discussed yesterday. You may be given a sedative if you're awake, to help you stay calm.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "Anesthesia ensures that you do not feel pain during the procedure. Sedation keeps you comfortable and relaxed if spinal anesthesia is used."
+                        }
+                    ]
+                },
+                {
+                    "title": "The Surgery",
+                    "content": "The surgeon will make an incision (cut) over your knee. Damaged cartilage and bone will be removed from the lower end of your thigh bone (femur) and the upper end of your shin bone (tibia). A metal or plastic implant (artificial joint) will be fixed in place. The area will be cleaned and closed with stitches or staples. A sterile dressing will be applied to cover the wound.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "The goal is to replace the worn-out joint and restore smooth movement, reduce pain, and improve walking ability. The surgery usually takes 1.5 to 2.5 hours depending on the case."
+                        }
+                    ]
+                },
+                {
+                    "title": "Back to Your Room",
+                    "content": "Once you are stable (usually 1–2 hours in recovery), you'll be taken back to your hospital room. A nurse will continue to monitor your vitals and pain level. You'll be given IV fluids and pain medicines. You may feel sleepy or tired for the rest of the day, which is normal.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "IV fluids keep you hydrated. Pain control helps you rest and recover. You won't be allowed to eat or drink right away unless the doctor clears you. You may be asked to start sipping water slowly after a few hours."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "DAY 4 – First Day After Surgery",
+            "content": "Today is your first full day after surgery. The focus will be on monitoring your recovery, controlling your pain, checking the surgical site, and starting gentle movement with the help of the physiotherapist.",
+            "steps": [
+                {
+                    "title": "Vital Signs Monitoring",
+                    "content": "A nurse will regularly check your blood pressure, heart rate, temperature, oxygen levels, and fluid input and output (how much you drink, urine output).",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "Your body has just gone through a major surgery. These checks help the medical team make sure that you are not developing any complications like infection, internal bleeding, or breathing issues. It also ensures that anesthesia effects have worn off properly."
+                        }
+                    ]
+                },
+                {
+                    "title": "Pain Management",
+                    "content": "You will receive pain medicines either through IV line or oral tablets (if you're allowed to eat and drink). The pain team or nurse will ask you how much pain you're feeling, usually on a scale of 0 to 10.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "Pain control is crucial for your recovery. If your pain is well managed, you will be able to start moving, breathe deeply, and participate in physiotherapy — all of which help avoid complications like lung infections and blood clots."
+                        }
+                    ]
+                },
+                {
+                    "title": "Surgical Site Check",
+                    "content": "A nurse will check your dressing for any signs of bleeding or leakage. The surgical area will be examined to ensure there is no excessive swelling, redness, or pus. Your dressing might be reinforced or changed depending on hospital protocol.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "These early checks can help detect signs of infection or bleeding early, so it can be treated immediately."
+                        }
+                    ]
+                },
+                {
+                    "title": "Introduction to Movement and Physiotherapy",
+                    "content": "A physiotherapist will visit you to start gentle leg exercises, even while you are lying in bed. These may include ankle pumps (moving your feet up and down), isometric leg squeezes (tightening your thigh muscles), and deep breathing exercises to expand your lungs.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "After surgery, your risk of developing blood clots, chest infections, and stiffness increases if you lie still for too long. These exercises improve blood circulation, prevent muscle weakness, and reduce the chance of lung complications."
+                        }
+                    ]
+                },
+                {
+                    "title": "Nutrition and Fluids",
+                    "content": "If your condition is stable and you are not feeling nauseated, you may be allowed to drink clear fluids first. If that goes well, soft food or a light diet may be introduced.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "Your body needs energy to heal. But digestion can be slow right after anesthesia, so the return to regular food is done gradually."
+                        }
+                    ]
+                },
+                {
+                    "title": "Emotional Support and Patient Counseling",
+                    "content": "A nurse, counselor, or physiotherapist may talk to you about how you are feeling emotionally. You or your family may have concerns — these should be freely discussed.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "It is normal to feel anxious, overwhelmed, or emotional after surgery. The hospital staff is there to help you feel supported and confident about your recovery."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "DAY 5 – Standing, Walking & Discharge Planning",
+            "content": "Today is a big step in your recovery. With support, you'll begin to stand up and take your first steps using a walker. The medical team will also prepare you and your family for discharge and home care.",
+            "steps": [
+                {
+                    "title": "Final Check of Your Vitals and Wound",
+                    "content": "A nurse will once again check your blood pressure, pulse, temperature, and oxygen levels. Your surgical site will be examined for healing. The dressing may be changed or left intact depending on hospital policy.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "These checks ensure that your recovery is stable and that your wound is healing without signs of infection (like redness, swelling, pus, or fever)."
+                        }
+                    ]
+                },
+                {
+                    "title": "Pain Control Assessment",
+                    "content": "The doctor or nurse will ask how much pain you're feeling today. Pain medicines may now shift from IV to oral tablets, depending on how well you are eating.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "You need to be comfortable enough to stand and walk. Pain control also helps improve sleep, mood, and confidence."
+                        }
+                    ]
+                },
+                {
+                    "title": "Physiotherapy – First Walk with Walker",
+                    "content": "A physiotherapist will assist you in getting out of bed and standing with a walker. You'll be trained on how to shift weight slowly onto the operated leg, take short steps, and maintain balance. You'll also be taught how to sit and stand without putting too much strain on the knee, how to get in and out of bed, how to use the toilet safely, and if needed, how to climb stairs using the 'good leg up, operated leg down' method.",
+                    "terms": [
+                        {
+                            "title": "Why this is important?",
+                            "content": "Walking helps restore joint mobility, improves blood flow, prevents complications, and builds confidence. The more you move safely, the faster you recover."
+                        }
+                    ]
+                },
+                {
+                    "title": "Discharge Planning Begins",
+                    "content": "If your condition is stable, the doctor may decide to discharge you today or tomorrow. Before discharge, you or your caregiver will receive medication list, dressing instructions, activity guidelines, physiotherapy plan, follow-up schedule, and emergency signs to watch for.",
+                    "terms": [
+                        {
+                            "title": "Medication list",
+                            "content": "Painkillers, antibiotics, blood thinners, and sometimes stomach protectants."
+                        },
+                        {
+                            "title": "Dressing instructions",
+                            "content": "How to care for the wound at home, when to change the dressing, what to do if there is discharge, odor, or increased swelling."
+                        },
+                        {
+                            "title": "Activity guidelines",
+                            "content": "When and how to walk, which movements to avoid (like squatting, sitting cross-legged, twisting), how long to use the walker or crutches."
+                        },
+                        {
+                            "title": "Physiotherapy plan",
+                            "content": "You will be advised to continue specific exercises at home. Some patients are referred to a home physiotherapist."
+                        },
+                        {
+                            "title": "Follow-up schedule",
+                            "content": "Usually within 10 to 14 days for stitch removal and review."
+                        },
+                        {
+                            "title": "Emergency signs to watch for",
+                            "content": "Fever over 100°F (38°C), increased pain, redness, or pus around the wound, swelling in the calf or breathlessness (could signal a blood clot)."
+                        },
+                        {
+                            "title": "Why this is important?",
+                            "content": "Discharge is more than just going home — it's about continuing your recovery safely. Proper home care ensures long-term success of your knee replacement."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

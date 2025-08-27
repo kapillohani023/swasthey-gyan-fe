@@ -33,8 +33,8 @@ export default function SurgeryTimeline() {
     })
   }
   return (
-    <View style={{ flex: 1, padding: 20, backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
-      <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 20, width: '100%' }}>
+    <View style={{ flex: 1, padding: 20, backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+      <View style={{ flexDirection: 'row', alignItems: 'center', width: '100%' }}>
         <Typography 
           variant="h1" 
           onPress={() => router.back()}

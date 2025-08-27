@@ -160,7 +160,8 @@ const styles = StyleSheet.create({
         flex: 1,
         gap: 20,
         padding: 20,
-        justifyContent: "space-around"
+        justifyContent: "space-around",
+        width: "100%"
     },
     fieldsContainer: {
         flex: 1,
